@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trytofixmyspeaker.github.io/sitemap.xml
