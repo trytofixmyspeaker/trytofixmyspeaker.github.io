@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Deep Dust Clean - Speaker Dust Removal Tool | Fix My Speaker</title>
+<meta name="description" content="Deep dust clean for your phone speaker. Frequency sweep from 200Hz to 1500Hz shakes loose dust, lint and debris to restore clear sound.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" type="image/svg+xml" href="../icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Fix My Speaker</a>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/deep-clean/">Deep Clean</a></li>
+      <li><a href="/vibration/">Vibration</a></li>
+      <li><a href="/#how-it-works">How It Works</a></li>
+      <li><a href="/all-tools/">Tools</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <h1>Deep Dust Clean</h1>
+  <p>A strong frequency sweep that shakes loose dust, lint and debris trapped inside your speaker grille.</p>
+</section>
+
+<section class="content-section" style="padding-top: 40px;">
+  <div class="container" style="max-width: 720px;">
+    <div class="tool-card" id="toolCard" data-mode="dust" style="margin-top: 0;">
+      <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Dust Removal Tool</h2>
+      <p class="tool-subtext">Tap Start to run the 60-second frequency sweep.</p>
+      <div class="mode-row">
+        <a class="mode-link" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>Eject Water</a>
+        <button type="button" class="mode-btn active" data-mode="dust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Remove Dust</button>
+        <a class="mode-link" href="/vibration/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Vibration</a>
+      </div>
+      <div class="speaker-row">
+        <button type="button" class="speaker-btn active" data-speaker="both">Both Speakers</button>
+        <button type="button" class="speaker-btn" data-speaker="left">Left Speaker</button>
+        <button type="button" class="speaker-btn" data-speaker="right">Right Speaker</button>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-meta"><span id="progressPercent">0%</span><span id="statusText">Ready to clean</span></div>
+      </div>
+      <div class="tool-controls">
+        <button type="button" class="btn btn-primary" id="startBtn"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>Start Cleaning</button>
+        <button type="button" class="btn btn-secondary" id="stopBtn" disabled><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>Stop</button>
+      </div>
+      <div class="warning-box"><p>Turn volume to maximum and hold the phone speaker down so loose dust falls out of the grille.</p></div>
+    </div>
+  </div>
+</section>
+<section class="content-section">
+  <div class="container">
+    <h2>How the Deep Dust Clean Works</h2>
+    <p class="section-intro">Six tones in one pass, from low bass to high treble.</p>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3>Frequency Sweep</h3><p>The dust mode plays six tones in a row, 200, 300, 450, 700, 1000 and 1500 Hz, for ten seconds each. Low tones shake big bits loose, while high tones reach fine dust that sits deep in the grille. The full sweep takes just one minute to finish.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>When to Use It</h3><p>Use deep clean when sound turns dull, quiet, or flat after weeks in a pocket or a bag. It also helps after beach trips, dusty rooms, or long days spent outdoors. If voices sound far away, built up dust is often the cause.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3>Getting the Best Result</h3><p>Set volume to maximum, take off any case that covers the speaker, and hold the phone with the speaker facing down on a table. Run the sweep twice in a row if the sound is still dull. Then play music and listen for clear highs and bass.</p></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Keep Every Speaker in Your Life Clean</h2>
+      <p>Care tips for your phone, earbuds and more.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div><h3>Earbuds and Bluetooth Speakers Too</h3><p>Dust gets into earbuds and small Bluetooth speakers just as fast as it gets into your phone. The same sweep works for them too, since sound waves do not care about size at all. Place the earbud or speaker on a table, speaker side down, and run the sweep. Keep the volume high and the device still for the full minute.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Prevent Dust Before It Settles</h3><p>Stop dust before it builds up in the grille. Keep your phone out of dusty pockets and bags, and wipe the grille with a dry, soft cloth each week. A good case with a speaker cover helps a lot. Run a quick dust clean once a week, even when the sound seems fine, so dust never gets a chance to settle in deep.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>When the Speaker Needs Repair</h3><p>If sound stays muffled after three full sweeps, the problem may be more than dust. Water damage, a torn membrane, or loose parts inside can cause weak sound. Try vibration mode once more, then test with a call. If nothing helps, take the phone to a repair shop and ask for a speaker check. Do not open the phone yourself, since that can void the warranty and cause harm.</p></div>
+    </div>
+  </div>
+</section>
+<section class="cta-section">
+  <div class="container">
+    <h2>Speaker Still Not Clear?</h2>
+    <p>Still muffled after a deep dust clean? Run the water eject mode next. The low tone can push out water that dust mode cannot move.</p>
+    <div class="cta-buttons">
+      <a class="btn btn-white" href="/">Run Water Eject</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Fix My Speaker</h3>
+      <p>The free fix my speaker tool that uses sound waves to eject water and clear dust from speakers daily.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/">Terms of Service</a></li>
+        <li><a href="/disclaimer/">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/all-tools/">Tools</a></li>
+        <li><a href="/#how-it-works">How It Works</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/deep-clean/">Deep Dust Clean</a></li>
+        <li><a href="/vibration/">Vibration Mode</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2026 Fix My Speaker. All rights reserved.</p></div>
+</footer>
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal-title" id="modalTitle"></div>
+    <div class="modal-message" id="modalMessage"></div>
+    <div class="modal-actions">
+      <a class="btn btn-primary" id="modalPrimary" href="/vibration/"></a>
+      <button type="button" class="btn btn-secondary" id="modalSecondary"></button>
+    </div>
+  </div>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
