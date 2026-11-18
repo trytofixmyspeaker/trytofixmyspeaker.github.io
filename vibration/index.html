@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Vibration Mode - Shake Out Trapped Water | Fix My Speaker</title>
+<meta name="description" content="Vibration mode for speaker cleaning. Combines an 80Hz bass tone with your phone's vibration motor to shake out trapped water and stubborn debris.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" type="image/svg+xml" href="../icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Fix My Speaker</a>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/deep-clean/">Deep Clean</a></li>
+      <li><a href="/vibration/">Vibration</a></li>
+      <li><a href="/#how-it-works">How It Works</a></li>
+      <li><a href="/all-tools/">Tools</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <h1>Vibration Mode</h1>
+  <p>Deep bass plus your phone's vibration motor, the strongest way to shake out all trapped water and stubborn debris.</p>
+</section>
+
+<section class="content-section" style="padding-top: 40px;">
+  <div class="container" style="max-width: 720px;">
+    <div class="tool-card" id="toolCard" data-mode="vibration" style="margin-top: 0;">
+      <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Vibration Cleaning Tool</h2>
+      <p class="tool-subtext">Tap Start to run the 30-second vibration cycle.</p>
+      <div class="mode-row">
+        <a class="mode-link" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>Eject Water</a>
+        <a class="mode-link" href="/deep-clean/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Remove Dust</a>
+        <button type="button" class="mode-btn active" data-mode="vibration"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Vibration</button>
+      </div>
+      <div class="speaker-row">
+        <button type="button" class="speaker-btn active" data-speaker="both">Both Speakers</button>
+        <button type="button" class="speaker-btn" data-speaker="left">Left Speaker</button>
+        <button type="button" class="speaker-btn" data-speaker="right">Right Speaker</button>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-meta"><span id="progressPercent">0%</span><span id="statusText">Ready to clean</span></div>
+      </div>
+      <div class="tool-controls">
+        <button type="button" class="btn btn-primary" id="startBtn"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>Start Cleaning</button>
+        <button type="button" class="btn btn-secondary" id="stopBtn" disabled><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>Stop</button>
+      </div>
+      <div class="warning-box"><p>Hold the device loosely in your hand with the speaker facing down for best results. On iPhones the vibration motor is not used, so the deep bass tone does the work instead.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <h2>How Vibration Mode Works</h2>
+    <p class="section-intro">Sound and motion working together to free trapped water.</p>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Dual Action</h3><p>Vibration mode pairs an 80 Hz bass tone with your phone's vibration motor. The tone shakes the speaker from the inside, while the motor adds shake from the outside. Together they move water that one method alone cannot shift, even from deep inside.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><h3>Best for Submerged Phones</h3><p>If your phone went under water, vibration mode is your best first step. The motor shakes hard enough to push out drops stuck deep in the grille. Use it right away, before water dries and leaves dirt behind.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>How to Hold Your Phone</h3><p>Hold the phone loosely in your palm, with the speaker facing down toward the floor. Do not grip it tight, since a tight grip blocks the free shake. Let the phone move a little with each pulse, so water can fall out.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Phone Fell in Water? What to Do Next</h2>
+      <p>When sound cleaning is enough, and when it is not.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Act Fast, Skip the Rice</h3><p>Rice cannot fix a wet speaker. It takes a full day or more, and cannot pull water out of the grille. Vibration mode works in 30 seconds, right on the spot. Switch the phone off if you can, wipe the outside dry, then run vibration with the speaker down. Repeat twice if the sound is still low. Fast action matters more than any home trick, so do not wait for rice.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div><h3>Repair Costs and Insurance</h3><p>A repair shop can charge 50 to 150 dollars to open a phone and clean the speaker. Some shops charge even more if parts need to be swapped. Check your phone insurance or warranty first, since water damage may be covered. Keep the bill and photos of the damage for your claim form. Our free tool costs nothing to try, so always run it before you pay for a repair.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Know Your Waterproof Rating</h3><p>Most new phones have a water rating, such as IP68, which means they can handle a short dip in water. But the rating is tested in clean lab water, not in pools, sea water or soap. A rating does not mean the speaker will stay clear. After any dip, run the cleaner even if the phone seems fine, since water can hide inside.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Finish With a Clean Sweep</h2>
+    <p>Finish now with a water eject pass to clear out what is left behind.</p>
+    <div class="cta-buttons">
+      <a class="btn btn-white" href="/">Run Water Eject</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Fix My Speaker</h3>
+      <p>The free fix my speaker tool that uses sound waves to eject water and clear dust from speakers daily.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/">Terms of Service</a></li>
+        <li><a href="/disclaimer/">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/all-tools/">Tools</a></li>
+        <li><a href="/#how-it-works">How It Works</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/deep-clean/">Deep Dust Clean</a></li>
+        <li><a href="/vibration/">Vibration Mode</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2026 Fix My Speaker. All rights reserved.</p></div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal-title" id="modalTitle"></div>
+    <div class="modal-message" id="modalMessage"></div>
+    <div class="modal-actions">
+      <a class="btn btn-primary" id="modalPrimary" href="/"></a>
+      <button type="button" class="btn btn-secondary" id="modalSecondary"></button>
+    </div>
+  </div>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
