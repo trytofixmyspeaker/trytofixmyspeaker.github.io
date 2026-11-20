@@ -1,3 +1,16 @@
+/* ---------- Google Analytics (GA4) ---------- */
+/* Measurement ID: G-T496470VRG. Loads on every page that includes this file. */
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-T496470VRG');
+(function () {
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T496470VRG';
+  document.head.appendChild(s);
+})();
+
 (function () {
   'use strict';
 
